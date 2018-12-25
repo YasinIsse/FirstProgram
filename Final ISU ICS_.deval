@@ -1,0 +1,94 @@
+setscreen ("graphics:895;620")
+var bg : int := Pic.FileNew ("background-2.bmp")
+
+var font4 : int
+font4 := Font.New ("Palatino:172:bold,italic")
+Pic.Draw (bg, 0, 0, picCopy)
+Font.Draw ("10", 50, 180, font4, green)
+delay (1000)
+cls
+Pic.Draw (bg, 0, 0, picCopy)
+Font.Draw ("9", 200, 180, font4, green)
+delay (1000)
+cls
+Pic.Draw (bg, 0, 0, picCopy)
+Font.Draw ("8", 200, 180, font4, green)
+delay (1000)
+cls
+Pic.Draw (bg, 0, 0, picCopy)
+Font.Draw ("7", 200, 180, font4, green)
+delay (1000)
+cls
+Pic.Draw (bg, 0, 0, picCopy)
+Font.Draw ("6", 200, 180, font4, green)
+delay (1000)
+cls
+Pic.Draw (bg, 0, 0, picCopy)
+Font.Draw ("5", 200, 180, font4, green)
+delay (1000)
+cls
+Pic.Draw (bg, 0, 0, picCopy)
+Font.Draw ("4", 200, 180, font4, green)
+delay (1000)
+cls
+Pic.Draw (bg, 0, 0, picCopy)
+Font.Draw ("3", 200, 180, font4, green)
+delay (1000)
+cls
+Pic.Draw (bg, 0, 0, picCopy)
+Font.Draw ("2", 200, 180, font4, green)
+delay (1000)
+cls
+Pic.Draw (bg, 0, 0, picCopy)
+Font.Draw ("1", 200, 180, font4, green)
+delay (1000)
+cls
+Pic.Draw (bg, 0, 0, picCopy)
+Font.Draw ("FLY..", 200, 180, font4, green)
+delay (1000)
+
+Pic.Draw (bg, 0, 0, picCopy)
+
+Pic.Draw (bg, 0, 0, picCopy)
+var bg3 : int := Pic.FileNew ("ICSculminating.bmp")
+var pic : int := Pic.FileNew ("icsplane.bmp")
+setscreen ("offscreenonly")
+for x : 50 .. maxx - 0
+    Pic.Draw (bg3, 0, 0, picCopy)
+    Pic.Draw (pic, x, x, picMerge)
+    View.Update
+    delay (1)
+end for
+
+Pic.Draw (bg, 0, 0, picCopy)
+var bg4 : int := Pic.FileNew ("ICSculminating.bmp")
+var pic2 : int := Pic.FileNew ("icsplane2.bmp")
+for decreasing x : maxx - 0 .. 0
+    Pic.Draw (bg4, 0, 0, picCopy)
+    Pic.Draw (pic2, x, x, picMerge)
+    View.Update
+    delay (1)
+end for
+
+
+var bg5 : int := Pic.FileNew ("ICSculminating.bmp")
+var font5 : int
+font5 := Font.New ("Palatino:102:bold,italic")
+Pic.Draw (bg5, 0, 0, picCopy)
+Font.Draw ("Clear Runway", 10, 180, font5, green)
+delay (1000)
+
+
+
+var bg6 :int := Pic.FileNew ("ICSculminating.bmp")
+var pic6 :int:= Pic.FileNew ("untitled.jpg")
+for  x: 0..maxx -0 by 2
+cls
+Pic.Draw (bg6, 0, 0,picCopy)
+Pic.Draw (pic6, x, 0, picMerge)
+View.Update
+delay (1)
+end for
+
+
+
